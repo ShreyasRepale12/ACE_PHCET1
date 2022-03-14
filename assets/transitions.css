@@ -1,0 +1,43 @@
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.8s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0.1;
+}
+
+#content-desktop {
+    display: block;
+}
+
+#content-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #content-desktop {
+        display: none;
+    }
+    #content-mobile {
+        display: block;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00db80;
+    border-radius: 20px;
+}
